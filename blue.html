@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Portals</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+  <body>
+
+<!--Buttons on the left side for different categories-->
+<div class="container">
+  <nav>
+    <ul class="nav">
+      <li class="green"><a class="nav__link" href="index.html" style="color:#8AC75D; background-color: rgba(255, 255, 255, 0.8); border-radius: 10px; margin-left:5px"><i class="fa fa-home"></i></a></li>
+      <li class="orange"><a class="nav__link" href="orange.html" style="color:#EC7B31; background-color: rgba(255, 255, 255, 0.8); border-radius: 10px; margin-left:5px; padding:5px;"><i class="fa fa-building"></i></a></li>
+      <li class="blue"><a class="nav__link" href="blue.html" style="color:#50B2C8; background-color: rgba(255, 255, 255, 0.8); border-radius: 10px; margin-left:3px"><i class="fa fa-comment"></i></li></a>
+    </ul>
+  </nav>
+</div>
+<!--The portals itself-->
+    <div class="row" style="margin-left:40px;">
+      <div class="column" style="background-color: rgba(255, 255, 255, 0.8);">
+        <img class="logo" src="playground.png" alt="Playground"/>
+        <div class="portal-button" style="background-color: #50B2C8;" data-hover-text="Playground">
+          <a onclick="window.open(this.href,'_blank');return false;" href="https://play.workadventu.re/@/workspacesky/laws-of-the-universe/lotu.tmj" style="color: white;">PLAY</a>        </div> 
+     </div>
+
+     <div class="column" style="background-color: rgba(255, 255, 255, 0.8);">
+      <img class="logo" src="playground.png" alt="Playground"/>
+      <div class="portal-button" style="background-color: #50B2C8;" data-hover-text="Playground">
+        <a onclick="window.open(this.href,'_blank');return false;" href="https://play.workadventu.re/@/workspacesky/laws-of-the-universe/lotu.tmj" style="color: white;">PLAY</a>      </div> 
+   </div>
+
+   <div class="column" style="background-color: rgba(255, 255, 255, 0.8);">
+    <img class="logo" src="playground.png" alt="Playground"/>
+    <div class="portal-button" style="background-color: #50B2C8;" data-hover-text="Playground">
+      <a onclick="window.open(this.href,'_blank');return false;" href="https://play.workadventu.re/@/workspacesky/laws-of-the-universe/lotu.tmj" style="color: white;">PLAY</a>    </div> 
+ </div>
+
+ <div class="column" style="background-color: rgba(255, 255, 255, 0.8);">
+  <img class="logo" src="playground.png" alt="Playground"/>
+  <div class="portal-button" style="background-color: #50B2C8;" data-hover-text="Playground">
+    <a onclick="window.open(this.href,'_blank');return false;" href="https://play.workadventu.re/@/workspacesky/laws-of-the-universe/lotu.tmj" style="color: white;">PLAY</a>
+  </div> 
+</div>
+<div class="column" style="background-color: rgba(255, 255, 255, 0.8);">
+  <img class="logo" src="playground.png" alt="Playground"/>
+  <div class="portal-button" style="background-color: #50B2C8;" data-hover-text="Playground">
+    <a onclick="window.open(this.href,'_blank');return false;" href="https://play.workadventu.re/@/workspacesky/laws-of-the-universe/lotu.tmj" style="color: white;">PLAY</a>  </div> 
+</div>
+
+        <div class="box"></div>
+        <script>
+var active = 0;
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href === document.URL) {
+        active = i;
+    }
+}
+document.links[active].className = 'active';
+            </script>
+  </body>
+</html>
